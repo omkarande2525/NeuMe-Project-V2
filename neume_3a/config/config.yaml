@@ -1,0 +1,82 @@
+data:
+  eeg_csv: data/raw/updated_eeg_dataset.csv
+  fnirs_csv: data/raw/updated_fnirs_dataset.csv
+  processed_dir: data/processed
+  eeg_sfreq: 100.0
+  fnirs_sfreq: 100.0
+
+epoching:
+  duration: 1.0
+  overlap: 0.5
+  epoch_samples: 100
+  step_samples: 50
+
+labels:
+  # Binary target from CSV: 0=rest, 1=engagement
+  # 3-class derived from signal_energy percentiles
+  binary_map:
+    0: FATIGUE
+    1: FOCUSED
+  three_class:
+    energy_low_pct: 33
+    energy_high_pct: 66
+    low_label: FATIGUE
+    mid_label: FOCUSED
+    high_label: FLOW
+  use_three_class: true
+  fusion_strategy: eeg_primary   # eeg labels take priority over fnirs
+
+augmentation:
+  enabled: true
+  target_epochs_per_class: 1000
+  methods:
+    gaussian_noise:
+      enabled: true
+      n_copies: 5
+      noise_std: 0.02
+    time_shift:
+      enabled: true
+      n_copies: 3
+      max_shift_samples: 10
+    amplitude_scale:
+      enabled: true
+      n_copies: 3
+      scale_range: [0.85, 1.15]
+    channel_dropout:
+      enabled: true
+      n_copies: 2
+      dropout_prob: 0.1
+
+eegnet:
+  n_channels: 8
+  n_timepoints: 100
+  f1: 8
+  d: 2
+  f2: 16
+  dropout: 0.5
+  n_classes: 3
+
+training:
+  epochs: 50
+  batch_size: 32
+  learning_rate: 0.001
+  patience: 10
+  val_split: 0.2
+  random_seed: 42
+
+inference:
+  window_size_s: 1.0
+  step_size_s: 0.5
+  llm_call_interval_s: 10.0
+  max_latency_ms: 300
+  llm_model: gpt-4o-mini
+  fallback_enabled: true
+
+axolotl:
+  base_model: meta-llama/Llama-3.1-8B-Instruct
+  output_dir: engine/axolotl/outputs/nova-game-director
+  training_data: data/processed/llm_training_data.jsonl
+
+api:
+  host: 0.0.0.0
+  port: 5050

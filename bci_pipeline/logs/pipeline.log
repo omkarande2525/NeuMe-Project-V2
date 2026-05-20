@@ -1,0 +1,236 @@
+[2026-04-18 17:36:23,864] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 001
+[2026-04-18 18:01:20,681] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 001
+[2026-04-18 18:01:22,339] INFO     loaders.physionet_loader — Subject 001: loaded 6 runs, total duration 749.99s
+[2026-04-18 18:01:22,345] INFO     __main__ — Subject 001: PhysioNet loader used
+[2026-04-18 18:01:22,386] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-04-18 18:01:22,617] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 2: Resampled to 256Hz
+[2026-04-18 18:01:22,743] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-04-18 18:01:22,874] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-04-18 18:01:25,056] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-04-18 18:01:25,078] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-04-18 18:01:25,208] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 1494 windows, shape (1494, 9, 256)
+[2026-04-18 18:01:25,216] INFO     validators — Validation Subject 001: EEG shape (1494, 9, 256), sfreq 256.0Hz
+[2026-04-18 18:01:25,228] WARNING  loaders.fnirs_loader — Subject 001: fNIRS data dataset ds003831 not found at data\raw\fnirs\ds003831\sub-01\nirs. Using synthetic fallback.
+[2026-04-18 18:01:25,229] INFO     loaders.fnirs_loader — fNIRS Subject 001: Generating synthetic fNIRS fallback data
+[2026-04-18 18:01:25,288] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 16 channels
+[2026-04-18 18:01:25,318] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: ['S1_D1 760', 'S1_D1 850', 'S1_D2 760', 'S1_D2 850', 'S1_D3 760', 'S1_D3 850', 'S1_D4 760', 'S1_D4 850', 'S1_D5 760', 'S1_D5 850', 'S1_D6 760', 'S1_D6 850', 'S1_D7 760', 'S1_D7 850', 'S1_D8 760', 'S1_D8 850']
+[2026-04-18 18:01:25,321] ERROR    __main__ — Subject 001 failed: Beer-lambert must operate on optical density data, but none was found.
+[2026-04-18 18:01:51,728] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 001
+[2026-04-18 18:01:53,319] INFO     loaders.physionet_loader — Subject 001: loaded 6 runs, total duration 749.99s
+[2026-04-18 18:01:53,324] INFO     __main__ — Subject 001: PhysioNet loader used
+[2026-04-18 18:01:53,366] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-04-18 18:01:53,569] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 2: Resampled to 256Hz
+[2026-04-18 18:01:53,674] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-04-18 18:01:53,784] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-04-18 18:01:55,895] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-04-18 18:01:55,927] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-04-18 18:01:56,081] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 1494 windows, shape (1494, 9, 256)
+[2026-04-18 18:01:56,091] INFO     validators — Validation Subject 001: EEG shape (1494, 9, 256), sfreq 256.0Hz
+[2026-04-18 18:01:56,103] WARNING  loaders.fnirs_loader — Subject 001: fNIRS data dataset ds003831 not found at data\raw\fnirs\ds003831\sub-01\nirs. Using synthetic fallback.
+[2026-04-18 18:01:56,104] INFO     loaders.fnirs_loader — fNIRS Subject 001: Generating synthetic fNIRS fallback data
+[2026-04-18 18:01:56,134] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 16 channels
+[2026-04-18 18:01:56,165] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-04-18 18:01:56,232] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-04-18 18:01:56,235] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 8
+[2026-04-18 18:01:56,250] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-04-18 18:01:56,259] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (3599, 8, 10)
+[2026-04-18 18:01:56,260] INFO     validators — Validation Subject 001: fNIRS array shape (3599, 8, 10)
+[2026-04-18 18:01:56,261] WARNING  validators — Epoch count mismatch for subject 001: EEG=1494, fNIRS=3599. Trimming both to 1494 for alignment.
+[2026-04-18 18:01:56,285] INFO     validators — Alignment check: epoch count match confirmed after robust checking
+[2026-04-18 18:01:56,331] INFO     utils.io_utils — Saved Epochs to data\processed\eeg_epochs_subj001.pkl
+[2026-04-18 18:01:56,333] INFO     utils.io_utils — Saved ndarray to data\processed\fnirs_epochs_subj001.pkl
+[2026-04-18 18:02:52,273] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 001
+[2026-04-18 18:02:53,913] INFO     loaders.physionet_loader — Subject 001: loaded 6 runs, total duration 749.99s
+[2026-04-18 18:02:53,917] INFO     __main__ — Subject 001: PhysioNet loader used
+[2026-04-18 18:02:53,952] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-04-18 18:02:54,172] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 2: Resampled to 256Hz
+[2026-04-18 18:02:54,289] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-04-18 18:02:54,412] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-04-18 18:02:56,836] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-04-18 18:02:56,862] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-04-18 18:02:56,969] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 1494 windows, shape (1494, 9, 256)
+[2026-04-18 18:02:56,978] INFO     validators — Validation Subject 001: EEG shape (1494, 9, 256), sfreq 256.0Hz
+[2026-04-18 18:02:56,989] WARNING  loaders.fnirs_loader — Subject 001: fNIRS data dataset ds003831 not found at data\raw\fnirs\ds003831\sub-01\nirs. Using synthetic fallback.
+[2026-04-18 18:02:56,989] INFO     loaders.fnirs_loader — fNIRS Subject 001: Generating synthetic fNIRS fallback data
+[2026-04-18 18:02:57,017] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 16 channels
+[2026-04-18 18:02:57,051] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-04-18 18:02:57,061] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-04-18 18:02:57,064] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 8
+[2026-04-18 18:02:57,078] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-04-18 18:02:57,085] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (3599, 8, 10)
+[2026-04-18 18:02:57,087] INFO     validators — Validation Subject 001: fNIRS array shape (3599, 8, 10)
+[2026-04-18 18:02:57,087] WARNING  validators — Epoch count mismatch for subject 001: EEG=1494, fNIRS=3599. Trimming both to 1494 for alignment.
+[2026-04-18 18:02:57,107] INFO     validators — Alignment check: epoch count match confirmed after robust checking
+[2026-04-18 18:02:57,186] INFO     utils.io_utils — Saved Epochs to data\processed\eeg_epochs_subj001.pkl
+[2026-04-18 18:02:57,189] INFO     utils.io_utils — Saved ndarray to data\processed\fnirs_epochs_subj001.pkl
+[2026-04-18 18:03:26,234] INFO     __main__ — Skipping existing EEG for subject 001
+[2026-04-18 18:03:26,234] INFO     __main__ — Skipping existing fNIRS for subject 001
+[2026-04-18 18:03:26,235] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 002
+[2026-04-18 18:07:29,194] INFO     loaders.physionet_loader — Subject 002: loaded 6 runs, total duration 737.99s
+[2026-04-18 18:07:29,199] INFO     __main__ — Subject 002: PhysioNet loader used
+[2026-04-18 18:07:29,236] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-04-18 18:07:29,498] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 2: Resampled to 256Hz
+[2026-04-18 18:07:29,650] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-04-18 18:07:29,832] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-04-18 18:07:32,628] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-04-18 18:07:32,655] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-04-18 18:07:32,781] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 1470 windows, shape (1470, 9, 256)
+[2026-04-18 18:07:32,795] INFO     validators — Validation Subject 002: EEG shape (1470, 9, 256), sfreq 256.0Hz
+[2026-04-18 18:07:32,807] WARNING  loaders.fnirs_loader — Subject 002: fNIRS data dataset ds003831 not found at data\raw\fnirs\ds003831\sub-02\nirs. Using synthetic fallback.
+[2026-04-18 18:07:32,807] INFO     loaders.fnirs_loader — fNIRS Subject 002: Generating synthetic fNIRS fallback data
+[2026-04-18 18:07:32,838] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 16 channels
+[2026-04-18 18:07:32,868] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-04-18 18:07:32,880] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-04-18 18:07:32,883] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 8
+[2026-04-18 18:07:32,899] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-04-18 18:07:32,905] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (3599, 8, 10)
+[2026-04-18 18:07:32,907] INFO     validators — Validation Subject 002: fNIRS array shape (3599, 8, 10)
+[2026-04-18 18:07:32,907] WARNING  validators — Epoch count mismatch for subject 002: EEG=1470, fNIRS=3599. Trimming both to 1470 for alignment.
+[2026-04-18 18:07:32,929] INFO     validators — Alignment check: epoch count match confirmed after robust checking
+[2026-04-18 18:07:33,008] INFO     utils.io_utils — Saved Epochs to data\processed\eeg_epochs_subj002.pkl
+[2026-04-18 18:07:33,011] INFO     utils.io_utils — Saved ndarray to data\processed\fnirs_epochs_subj002.pkl
+[2026-04-18 18:07:33,015] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 003
+[2026-04-18 18:15:07,728] INFO     loaders.physionet_loader — Subject 003: loaded 6 runs, total duration 749.99s
+[2026-04-18 18:15:07,755] INFO     __main__ — Subject 003: PhysioNet loader used
+[2026-04-18 18:15:07,840] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-04-18 18:15:08,132] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 2: Resampled to 256Hz
+[2026-04-18 18:15:08,369] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-04-18 18:15:08,598] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-04-18 18:15:11,004] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-04-18 18:15:11,038] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-04-18 18:15:11,450] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 1494 windows, shape (1494, 9, 256)
+[2026-04-18 18:15:11,472] INFO     validators — Validation Subject 003: EEG shape (1494, 9, 256), sfreq 256.0Hz
+[2026-04-18 18:15:11,496] WARNING  loaders.fnirs_loader — Subject 003: fNIRS data dataset ds003831 not found at data\raw\fnirs\ds003831\sub-03\nirs. Using synthetic fallback.
+[2026-04-18 18:15:11,498] INFO     loaders.fnirs_loader — fNIRS Subject 003: Generating synthetic fNIRS fallback data
+[2026-04-18 18:15:11,546] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 16 channels
+[2026-04-18 18:15:11,629] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-04-18 18:15:11,665] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-04-18 18:15:11,672] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 8
+[2026-04-18 18:15:11,731] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-04-18 18:15:11,746] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (3599, 8, 10)
+[2026-04-18 18:15:11,750] INFO     validators — Validation Subject 003: fNIRS array shape (3599, 8, 10)
+[2026-04-18 18:15:11,752] WARNING  validators — Epoch count mismatch for subject 003: EEG=1494, fNIRS=3599. Trimming both to 1494 for alignment.
+[2026-04-18 18:15:11,804] INFO     validators — Alignment check: epoch count match confirmed after robust checking
+[2026-04-18 18:15:11,921] INFO     utils.io_utils — Saved Epochs to data\processed\eeg_epochs_subj003.pkl
+[2026-04-18 18:15:11,927] INFO     utils.io_utils — Saved ndarray to data\processed\fnirs_epochs_subj003.pkl
+[2026-04-18 18:15:11,933] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 004
+[2026-04-18 18:19:59,095] INFO     loaders.physionet_loader — Subject 004: loaded 6 runs, total duration 737.99s
+[2026-04-18 18:19:59,109] INFO     __main__ — Subject 004: PhysioNet loader used
+[2026-04-18 18:19:59,164] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-04-18 18:19:59,400] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 2: Resampled to 256Hz
+[2026-04-18 18:19:59,620] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-04-18 18:19:59,815] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-04-18 18:20:00,901] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-04-18 18:20:00,935] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-04-18 18:20:01,158] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 1470 windows, shape (1470, 9, 256)
+[2026-04-18 18:20:01,175] INFO     validators — Validation Subject 004: EEG shape (1470, 9, 256), sfreq 256.0Hz
+[2026-04-18 18:20:01,202] WARNING  loaders.fnirs_loader — Subject 004: fNIRS data dataset ds003831 not found at data\raw\fnirs\ds003831\sub-04\nirs. Using synthetic fallback.
+[2026-04-18 18:20:01,203] INFO     loaders.fnirs_loader — fNIRS Subject 004: Generating synthetic fNIRS fallback data
+[2026-04-18 18:20:01,247] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 16 channels
+[2026-04-18 18:20:01,305] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-04-18 18:20:01,333] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-04-18 18:20:01,339] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 8
+[2026-04-18 18:20:01,364] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-04-18 18:20:01,380] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (3599, 8, 10)
+[2026-04-18 18:20:01,383] INFO     validators — Validation Subject 004: fNIRS array shape (3599, 8, 10)
+[2026-04-18 18:20:01,384] WARNING  validators — Epoch count mismatch for subject 004: EEG=1470, fNIRS=3599. Trimming both to 1470 for alignment.
+[2026-04-18 18:20:01,422] INFO     validators — Alignment check: epoch count match confirmed after robust checking
+[2026-04-18 18:20:01,527] INFO     utils.io_utils — Saved Epochs to data\processed\eeg_epochs_subj004.pkl
+[2026-04-18 18:20:01,531] INFO     utils.io_utils — Saved ndarray to data\processed\fnirs_epochs_subj004.pkl
+[2026-04-18 18:20:01,537] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 005
+[2026-04-18 18:22:32,507] ERROR    __main__ — Subject 005 failed: Subject 005 failed during PhysioNet loading: Try checking network connection or clearing mne_data cache.
+[2026-04-18 18:22:32,508] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 006
+[2026-04-18 19:57:50,269] ERROR    __main__ — Subject 006 failed: Subject 006 failed during PhysioNet loading: Try checking network connection or clearing mne_data cache.
+[2026-04-18 19:57:50,271] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 007
+[2026-04-19 04:37:17,688] ERROR    __main__ — Subject 007 failed: Subject 007 failed during PhysioNet loading: Try checking network connection or clearing mne_data cache.
+[2026-04-19 04:37:17,689] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 008
+[2026-04-19 09:21:16,054] ERROR    __main__ — Subject 008 failed: Subject 008 failed during PhysioNet loading: Try checking network connection or clearing mne_data cache.
+[2026-04-19 09:21:16,055] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 009
+[2026-04-19 09:21:20,109] ERROR    __main__ — Subject 009 failed: Subject 009 failed during PhysioNet loading: Try checking network connection or clearing mne_data cache.
+[2026-04-19 09:21:20,110] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 010
+[2026-04-19 09:21:23,230] ERROR    __main__ — Subject 010 failed: Subject 010 failed during PhysioNet loading: Try checking network connection or clearing mne_data cache.
+[2026-05-17 13:40:12,300] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 001
+[2026-05-17 13:40:14,462] INFO     loaders.physionet_loader — Subject 001: loaded 6 runs, total duration 749.99s
+[2026-05-17 13:40:14,469] INFO     __main__ — Subject 001: PhysioNet loader used
+[2026-05-17 13:40:14,519] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-05-17 13:40:14,864] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 2: Resampled to 256Hz
+[2026-05-17 13:40:15,019] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-05-17 13:40:15,147] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-05-17 13:40:22,572] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-05-17 13:40:22,630] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-05-17 13:40:22,792] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 1494 windows, shape (1494, 9, 256)
+[2026-05-17 13:40:22,810] INFO     validators — Validation Subject 001: EEG shape (1494, 9, 256), sfreq 256.0Hz
+[2026-05-17 13:40:22,835] WARNING  loaders.fnirs_loader — Subject 001: fNIRS data dataset ds003831 not found at data\raw\fnirs\ds003831\sub-01\nirs. Using synthetic fallback.
+[2026-05-17 13:40:22,836] INFO     loaders.fnirs_loader — fNIRS Subject 001: Generating synthetic fNIRS fallback data
+[2026-05-17 13:40:22,892] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 16 channels
+[2026-05-17 13:40:22,924] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-05-17 13:40:22,966] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-05-17 13:40:22,972] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 8
+[2026-05-17 13:40:22,990] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-05-17 13:40:22,998] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (3599, 8, 10)
+[2026-05-17 13:40:23,001] INFO     validators — Validation Subject 001: fNIRS array shape (3599, 8, 10)
+[2026-05-17 13:40:23,001] WARNING  validators — Epoch count mismatch for subject 001: EEG=1494, fNIRS=3599. Trimming both to 1494 for alignment.
+[2026-05-17 13:40:23,043] INFO     validators — Alignment check: epoch count match confirmed after robust checking
+[2026-05-17 13:40:23,158] INFO     utils.io_utils — Saved Epochs to data\processed\eeg_epochs_subj001.pkl
+[2026-05-17 13:40:23,160] INFO     utils.io_utils — Saved ndarray to data\processed\fnirs_epochs_subj001.pkl
+[2026-05-17 13:40:23,165] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 002
+[2026-05-17 13:40:24,988] INFO     loaders.physionet_loader — Subject 002: loaded 6 runs, total duration 737.99s
+[2026-05-17 13:40:25,006] INFO     __main__ — Subject 002: PhysioNet loader used
+[2026-05-17 13:40:25,068] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-05-17 13:40:25,226] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 2: Resampled to 256Hz
+[2026-05-17 13:40:25,356] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-05-17 13:40:25,499] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-05-17 13:40:27,422] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-05-17 13:40:27,457] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-05-17 13:40:27,633] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 1470 windows, shape (1470, 9, 256)
+[2026-05-17 13:40:27,651] INFO     validators — Validation Subject 002: EEG shape (1470, 9, 256), sfreq 256.0Hz
+[2026-05-17 13:40:27,672] WARNING  loaders.fnirs_loader — Subject 002: fNIRS data dataset ds003831 not found at data\raw\fnirs\ds003831\sub-02\nirs. Using synthetic fallback.
+[2026-05-17 13:40:27,673] INFO     loaders.fnirs_loader — fNIRS Subject 002: Generating synthetic fNIRS fallback data
+[2026-05-17 13:40:27,695] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 16 channels
+[2026-05-17 13:40:27,726] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-05-17 13:40:27,736] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-05-17 13:40:27,740] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 8
+[2026-05-17 13:40:27,751] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-05-17 13:40:27,757] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (3599, 8, 10)
+[2026-05-17 13:40:27,758] INFO     validators — Validation Subject 002: fNIRS array shape (3599, 8, 10)
+[2026-05-17 13:40:27,759] WARNING  validators — Epoch count mismatch for subject 002: EEG=1470, fNIRS=3599. Trimming both to 1470 for alignment.
+[2026-05-17 13:40:27,783] INFO     validators — Alignment check: epoch count match confirmed after robust checking
+[2026-05-17 13:40:27,861] INFO     utils.io_utils — Saved Epochs to data\processed\eeg_epochs_subj002.pkl
+[2026-05-17 13:40:27,863] INFO     utils.io_utils — Saved ndarray to data\processed\fnirs_epochs_subj002.pkl
+[2026-05-17 13:40:27,867] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 003
+[2026-05-17 13:40:29,547] INFO     loaders.physionet_loader — Subject 003: loaded 6 runs, total duration 749.99s
+[2026-05-17 13:40:29,560] INFO     __main__ — Subject 003: PhysioNet loader used
+[2026-05-17 13:40:29,599] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-05-17 13:40:29,720] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 2: Resampled to 256Hz
+[2026-05-17 13:40:29,845] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-05-17 13:40:29,959] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-05-17 13:40:31,296] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-05-17 13:40:31,322] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-05-17 13:40:31,471] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 1494 windows, shape (1494, 9, 256)
+[2026-05-17 13:40:31,484] INFO     validators — Validation Subject 003: EEG shape (1494, 9, 256), sfreq 256.0Hz
+[2026-05-17 13:40:31,498] WARNING  loaders.fnirs_loader — Subject 003: fNIRS data dataset ds003831 not found at data\raw\fnirs\ds003831\sub-03\nirs. Using synthetic fallback.
+[2026-05-17 13:40:31,498] INFO     loaders.fnirs_loader — fNIRS Subject 003: Generating synthetic fNIRS fallback data
+[2026-05-17 13:40:31,518] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 16 channels
+[2026-05-17 13:40:31,546] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-05-17 13:40:31,561] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-05-17 13:40:31,563] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 8
+[2026-05-17 13:40:31,582] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-05-17 13:40:31,589] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (3599, 8, 10)
+[2026-05-17 13:40:31,591] INFO     validators — Validation Subject 003: fNIRS array shape (3599, 8, 10)
+[2026-05-17 13:40:31,591] WARNING  validators — Epoch count mismatch for subject 003: EEG=1494, fNIRS=3599. Trimming both to 1494 for alignment.
+[2026-05-17 13:40:31,617] INFO     validators — Alignment check: epoch count match confirmed after robust checking
+[2026-05-17 13:40:31,664] INFO     utils.io_utils — Saved Epochs to data\processed\eeg_epochs_subj003.pkl
+[2026-05-17 13:40:31,666] INFO     utils.io_utils — Saved ndarray to data\processed\fnirs_epochs_subj003.pkl
+[2026-05-17 17:09:20,958] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 005
+[2026-05-17 17:12:15,533] INFO     loaders.physionet_loader — Subject 005: loaded 6 runs, total duration 737.99s
+[2026-05-17 17:12:15,539] INFO     __main__ — Subject 005: PhysioNet loader used
+[2026-05-17 17:12:15,579] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-05-17 17:12:16,008] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 2: Resampled to 256Hz
+[2026-05-17 17:12:16,333] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-05-17 17:12:16,631] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-05-17 17:12:24,393] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-05-17 17:12:24,439] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-05-17 17:12:24,804] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 1470 windows, shape (1470, 9, 256)
+[2026-05-17 17:12:24,821] INFO     validators — Validation Subject 005: EEG shape (1470, 9, 256), sfreq 256.0Hz
+[2026-05-17 17:12:24,854] ERROR    __main__ — Subject 005 failed: Subject 005: fNIRS dataset ds003831 not found at data\raw\fnirs\ds003831\sub-05\nirs. Visit https://openneuro.org/datasets/ds003831 to obtain the data.
+[2026-05-17 17:12:24,861] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 006

@@ -1,0 +1,110 @@
+[2026-05-17 13:49:34,376] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-05-17 13:49:35,453] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-05-17 13:49:35,459] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-05-17 13:49:38,751] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-05-17 13:49:38,805] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-05-17 13:49:38,823] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 19 windows, shape (19, 9, 256)
+[2026-05-17 13:49:38,851] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-05-17 13:49:38,858] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-05-17 13:49:38,864] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-05-17 13:49:38,980] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-05-17 13:49:38,981] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-05-17 13:49:38,984] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 19 windows, shape (19, 9, 256)
+[2026-05-17 13:49:38,988] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'C3', 'P3']
+[2026-05-17 13:49:38,994] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-05-17 13:49:39,003] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-05-17 13:49:39,003] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 2, components excluded: [0]
+[2026-05-17 13:49:39,004] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-05-17 13:49:39,007] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 19 windows, shape (19, 3, 256)
+[2026-05-17 13:49:39,023] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 4 channels
+[2026-05-17 13:49:39,023] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-05-17 13:49:39,024] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-05-17 13:49:39,024] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 4
+[2026-05-17 13:49:39,028] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-05-17 13:49:39,028] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (59, 4, 10)
+[2026-05-17 13:49:39,032] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 4 channels
+[2026-05-17 13:49:39,032] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-05-17 13:49:39,032] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-05-17 13:49:39,033] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 4
+[2026-05-17 13:49:39,037] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-05-17 13:49:39,037] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (59, 4, 10)
+[2026-05-17 13:49:39,072] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 001
+[2026-05-17 13:49:39,106] INFO     loaders.physionet_loader — Subject 001: loaded 1 runs, total duration 9.99s
+[2026-05-17 13:49:39,112] INFO     loaders.seed_loader — Subject 001: SEED-IV used key 'djc_eeg1', shape (62, 1000), sfreq 200Hz
+[2026-05-17 13:49:39,114] WARNING  loaders.fnirs_loader — Subject 001: fNIRS data dataset ds003831 not found at dummy_path\sub-01\nirs. Using synthetic fallback.
+[2026-05-17 13:49:39,114] INFO     loaders.fnirs_loader — fNIRS Subject 001: Generating synthetic fNIRS fallback data
+[2026-05-17 13:49:39,354] INFO     validators — Validation Subject 001: fNIRS array shape (19, 4, 256)
+[2026-05-17 13:50:53,227] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-05-17 13:50:53,604] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-05-17 13:50:53,611] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-05-17 13:50:54,398] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-05-17 13:50:54,421] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-05-17 13:50:54,439] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 19 windows, shape (19, 9, 256)
+[2026-05-17 13:50:54,443] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-05-17 13:50:54,452] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-05-17 13:50:54,459] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-05-17 13:50:54,591] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-05-17 13:50:54,592] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-05-17 13:50:54,596] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 19 windows, shape (19, 9, 256)
+[2026-05-17 13:50:54,602] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'C3', 'P3']
+[2026-05-17 13:50:54,607] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-05-17 13:50:54,611] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-05-17 13:50:54,613] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 2, components excluded: [0]
+[2026-05-17 13:50:54,614] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-05-17 13:50:54,617] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 19 windows, shape (19, 3, 256)
+[2026-05-17 13:50:54,627] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 4 channels
+[2026-05-17 13:50:54,627] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-05-17 13:50:54,627] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-05-17 13:50:54,629] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 4
+[2026-05-17 13:50:54,636] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-05-17 13:50:54,636] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (59, 4, 10)
+[2026-05-17 13:50:54,640] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 4 channels
+[2026-05-17 13:50:54,640] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-05-17 13:50:54,640] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-05-17 13:50:54,641] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 4
+[2026-05-17 13:50:54,645] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-05-17 13:50:54,646] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (59, 4, 10)
+[2026-05-17 13:50:54,664] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 001
+[2026-05-17 13:50:54,671] INFO     loaders.physionet_loader — Subject 001: loaded 1 runs, total duration 9.99s
+[2026-05-17 13:50:54,677] INFO     loaders.seed_loader — Subject 001: SEED-IV used key 'djc_eeg1', shape (62, 1000), sfreq 200Hz
+[2026-05-17 13:50:54,684] INFO     validators — Validation Subject 001: EEG shape (2, 1, 100), sfreq 100.0Hz
+[2026-05-17 13:50:54,688] INFO     validators — Validation Subject 001: fNIRS array shape (19, 4, 256)
+[2026-05-17 13:50:54,695] WARNING  validators — Epoch count mismatch for subject 001: EEG=10, fNIRS=15. Trimming both to 10 for alignment.
+[2026-05-17 13:50:54,697] INFO     validators — Alignment check: epoch count match confirmed after robust checking
+[2026-05-17 14:04:14,898] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-05-17 14:04:16,256] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-05-17 14:04:16,266] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-05-17 14:04:18,893] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-05-17 14:04:18,956] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-05-17 14:04:19,011] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 19 windows, shape (19, 9, 256)
+[2026-05-17 14:04:19,027] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'F4', 'Fz', 'C3', 'C4', 'Cz', 'P3', 'P4', 'Pz']
+[2026-05-17 14:04:19,050] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-05-17 14:04:19,064] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-05-17 14:04:19,126] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 8, components excluded: [0]
+[2026-05-17 14:04:19,127] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-05-17 14:04:19,132] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 19 windows, shape (19, 9, 256)
+[2026-05-17 14:04:19,138] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 1: Channels selected: ['F3', 'C3', 'P3']
+[2026-05-17 14:04:19,148] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 3: Applied bandpass filter
+[2026-05-17 14:04:19,156] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 4: Applied notch filter
+[2026-05-17 14:04:19,157] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 5: ICA applied, n_components used: 2, components excluded: [0]
+[2026-05-17 14:04:19,158] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 6: Re-referenced to average
+[2026-05-17 14:04:19,162] INFO     pipelines.eeg_pipeline — EEG Pipeline STEP 7: Epoched data into 19 windows, shape (19, 3, 256)
+[2026-05-17 14:04:19,220] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 4 channels
+[2026-05-17 14:04:19,221] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-05-17 14:04:19,221] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-05-17 14:04:19,223] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 4
+[2026-05-17 14:04:19,234] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-05-17 14:04:19,235] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (59, 4, 10)
+[2026-05-17 14:04:19,240] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 1: Converted to optical density, 4 channels
+[2026-05-17 14:04:19,241] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 2: Scalp coupling index check, marked bad channels: []
+[2026-05-17 14:04:19,241] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 3: Applied modified Beer-Lambert Law conversion
+[2026-05-17 14:04:19,243] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 4: Selected HbO channels, count: 4
+[2026-05-17 14:04:19,254] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 5: Applied bandpass filter
+[2026-05-17 14:04:19,255] INFO     pipelines.fnirs_pipeline — fNIRS Pipeline STEP 6: Result shape (59, 4, 10)
+[2026-05-17 14:04:19,300] INFO     loaders.physionet_loader — Downloading/loading PhysioNet data for subject 001
+[2026-05-17 14:04:19,327] INFO     loaders.physionet_loader — Subject 001: loaded 1 runs, total duration 9.99s
+[2026-05-17 14:04:19,341] INFO     loaders.seed_loader — Subject 001: SEED-IV used key 'djc_eeg1', shape (62, 1000), sfreq 200Hz
+[2026-05-17 14:04:19,354] INFO     validators — Validation Subject 001: EEG shape (2, 1, 100), sfreq 100.0Hz
+[2026-05-17 14:04:19,364] INFO     validators — Validation Subject 001: fNIRS array shape (19, 4, 256)
+[2026-05-17 14:04:19,374] WARNING  validators — Epoch count mismatch for subject 001: EEG=10, fNIRS=15. Trimming both to 10 for alignment.
+[2026-05-17 14:04:19,375] INFO     validators — Alignment check: epoch count match confirmed after robust checking

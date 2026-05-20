@@ -1,0 +1,32 @@
+# ============================================================
+# FILE: bci_pipeline/config.yaml
+# ============================================================
+pipeline:
+  epoch_duration: 1.0
+  epoch_overlap: 0.5
+  eeg:
+    channels: [F3, F4, Fz, C3, C4, Cz, P3, P4, Pz]
+    bandpass_low: 1.0
+    bandpass_high: 40.0
+    notch_freq: 50.0
+    resample_hz: 256
+    max_ica_components: 9
+  fnirs:
+    bandpass_low: 0.01
+    bandpass_high: 0.1
+    chromophore: HbO
+datasets:
+  physionet:
+    subjects: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    tasks: [3, 4, 7, 8, 11, 12]
+  fnirs:
+    base_path: data/raw/fnirs/ds003831
+    subjects: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    allow_synthetic: false
+  seed:
+    base_path: data/raw/seed_iv
+    subjects: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+paths:
+  raw: data/raw
+  processed: data/processed
+  logs: logs
